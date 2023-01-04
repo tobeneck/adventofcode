@@ -1,4 +1,9 @@
-calories_file = open("day01.txt")
+'''
+Day 1 of Advent of Code 2022.
+https://adventofcode.com/2022/day/1
+'''
+
+calories_file = open("../data/day01.txt")
 
 calorie_data = calories_file.readlines()
 
