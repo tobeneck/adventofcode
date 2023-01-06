@@ -113,9 +113,7 @@ def calc_my_matchup_score_task_2(matchup):
     return my_score
 
 
-
-matchups_file = open("../data/day02.txt")
-matchups = matchups_file.readlines()
+matchups = open("../data/day02.txt").readlines()
 matchups = [data.replace("\n", "") for data in matchups]
 
 my_task_1_scores = [calc_my_matchup_score_task_1(data) for data in matchups]
