@@ -1,4 +1,4 @@
-p,f,o=[[int(m) for m in n.replace("\n","").replace("-",",").split(",")] for n in open("../data/day04.txt")],0,0
+p,f,o=[[int(m) for m in n.strip("\n").replace("-",",").split(",")] for n in open("../data/day04.txt")],0,0
 for e in p:
  a,b,c,d=e;x,y=a-c,b-d
  if x*y<=0:f+=1 
